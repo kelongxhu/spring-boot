@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 12/19/16 11:19 AM
  */
 @Configuration
-@ComponentScan
+@ComponentScan("com.boot")
 @EnableAutoConfiguration
 public class Application {
     public static void main(String[] args) {
