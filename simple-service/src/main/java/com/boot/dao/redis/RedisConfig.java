@@ -1,4 +1,4 @@
-package com.boot.config.redis;
+package com.boot.dao.redis;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
