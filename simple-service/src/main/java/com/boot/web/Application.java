@@ -3,6 +3,7 @@ package com.boot.web;
 import com.boot.web.listener.RequestListener;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -15,6 +16,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @ComponentScan("com.boot")
 @EnableAutoConfiguration
 @EnableScheduling
+@EnableDiscoveryClient
 public class Application {
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(Application.class);

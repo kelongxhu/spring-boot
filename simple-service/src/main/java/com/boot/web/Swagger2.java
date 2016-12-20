@@ -1,4 +1,4 @@
-package com.boot.web.controllor;
+package com.boot.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

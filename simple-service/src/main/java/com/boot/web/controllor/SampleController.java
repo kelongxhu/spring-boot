@@ -6,6 +6,7 @@ package com.boot.web.controllor;
  */
 import com.boot.config.UserSetting;
 import com.boot.exception.MyException;
+import com.boot.web.annotation.AuthRequest;
 import com.boot.web.intercepter.HttpContentTraceInterceptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +38,7 @@ public class SampleController {
 
     @RequestMapping("/hello")
     @ResponseBody
+    @AuthRequest
     String hello(){
         logger.info("Hello World");
         return "Hello World";
