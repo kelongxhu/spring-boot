@@ -6,7 +6,6 @@
     <artifactId>example</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>eureka-feign</module>
     </modules>
     <groupId>com.boot</groupId>
     <version>1.0-SNAPSHOT</version>

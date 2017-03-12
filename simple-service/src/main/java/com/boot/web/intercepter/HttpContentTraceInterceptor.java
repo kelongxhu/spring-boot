@@ -22,7 +22,7 @@ public class HttpContentTraceInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
                              Object handler) throws Exception {
         if (handler instanceof HandlerMethod) {
-            httpLogger.info("web....................handler.");
+            httpLogger.info("web....................handler.{}",request.getRequestURL());
         }
 
         if (needAuth(request, handler)) {
